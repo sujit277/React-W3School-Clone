@@ -1,56 +1,56 @@
-.navitems:hover{
-    background-color: rgb(14, 151, 14);
+.navitems:hover {
+  background-color: rgb(14, 151, 14);
 }
 
-.navitems{
-    padding: 13px;
+.navitems {
+  padding: 13px;
 }
 
-.navitemsbuttons{
-    padding: 10px;
-    float: right;
+.navitemsbuttons {
+  padding: 10px;
+  float: right;
 }
 
-.btncst{
-    width: 130px;
-    height: 40px;
-    float: right;
-    border-radius: 17px;
+.btncst {
+  width: 130px;
+  height: 40px;
+  float: right;
+  border-radius: 17px;
 }
 
-.contentdiv{
-    height: 350px;
-    width: 600px;
-    background-color: brown;
-    margin-top: 60px;
+.contentdiv {
+  height: 350px;
+  width: 600px;
+  background-color: brown;
+  margin-top: 60px;
 }
 
-.iconImage{
-    width: 60px;
-    height: 55px;
+.iconImage {
+  width: 60px;
+  height: 55px;
 }
 
-.course:hover{
-    background-color: green;
-    color: white;
+.course:hover {
+  background-color: green;
+  color: white;
 }
 
-.box31{
-    border: none;
-    background-color: #F8F9FA;
+.box31 {
+  border: none;
+  background-color: #f8f9fa;
 }
 
-.box31:hover{
-    background-color: #0E970E;
+.box31:hover {
+  background-color: #0e970e;
 }
 
-.box32{
-    color:white;
-    cursor: pointer;
+.box32 {
+  color: white;
+  cursor: pointer;
 }
 
-.box32:hover{
-    color:black;
-    background-color: #CCCCCC;
-    cursor: pointer;
+.box32:hover {
+  color: black;
+  background-color: #cccccc;
+  cursor: pointer;
 }

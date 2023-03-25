@@ -4,46 +4,43 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import img1 from "../../Images/channels4_profile.jpg";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const navigate = useNavigate();
     const [Data, setData] = useState({
         emailLogin: "",
-        passwordLogin: ""
-    })
+        passwordLogin: "",
+    });
 
-    const [loginData,setLoginData] = useState([]);
+    const [loginData, setLoginData] = useState([]);
 
     useEffect(() => {
         getLoginData();
-    }, [])
+    }, []);
 
     function handleInput(event) {
         const name = event.target.name;
         const value = event.target.value;
-        console.log(value);
-        console.log(name);
-        console.log(Data);
-        setData({ ...Data, [name]: value })
+        setData({ ...Data, [name]: value });
     }
 
     async function getLoginData() {
         const result = await axios.get("http://localhost:3000/Users");
         setLoginData(result.data);
-        console.log(result.data);
-        
+
     }
 
-
-    function checkLogin(){
-        for(let i = 0;i < loginData.length;i++){
-            if(loginData[i].email === Data.emailLogin && loginData[i].password === Data.passwordLogin ){
-                    alert("Logined Successfully");
-                    localStorage.setItem("UserName",loginData[i].name);
-                    navigate("/");
-            }
-            else{
+    function checkLogin() {
+        for (let i = 0; i < loginData.length; i++) {
+            if (
+                loginData[i].email === Data.emailLogin &&
+                loginData[i].password === Data.passwordLogin
+            ) {
+                alert("Logined Successfully");
+                localStorage.setItem("UserName", loginData[i].name);
+                navigate("/");
+            } else {
                 alert("Logined Failed");
             }
         }
@@ -57,21 +54,58 @@ const Login = () => {
                 </div>
                 <div className="box12">
                     <div className="col-md-5 box13">
-                        <h3 style={{ marginBottom: "19px" }}><strong>Log in</strong></h3>
+                        <h3 style={{ marginBottom: "19px" }}>
+                            <strong>Log in</strong>
+                        </h3>
                         <form>
                             <div className="mb-3">
-                                <label htmlFor="emailLogin" className="form-label"><strong>Email</strong><span className="box16" >Need and Account? <a href="/signup" style={{ color: "green" }}>Sign up</a></span></label>
-                                <input type="text" className="form-control" id="emailLogin" name="emailLogin" aria-describedby="emailHelp" onChange={(event) => { handleInput(event) }} />
+                                <label htmlFor="emailLogin" className="form-label">
+                                    <strong>Email</strong>
+                                    <span className="box16">
+                                        Need and Account?{" "}
+                                        <a href="/signup" style={{ color: "green" }}>
+                                            Sign up
+                                        </a>
+                                    </span>
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="emailLogin"
+                                    name="emailLogin"
+                                    aria-describedby="emailHelp"
+                                    onChange={(event) => {
+                                        handleInput(event);
+                                    }}
+                                />
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="passwordLogin" className="form-label"><strong>Password</strong></label>
-                                <input type="text" className="form-control" id="passwordLogin" name="passwordLogin" onChange={(event) => { handleInput(event) }} />
+                                <label htmlFor="passwordLogin" className="form-label">
+                                    <strong>Password</strong>
+                                </label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="passwordLogin"
+                                    name="passwordLogin"
+                                    onChange={(event) => {
+                                        handleInput(event);
+                                    }}
+                                />
                             </div>
                             <div className="mb-3 box14">
-                                <button type="button" className="btn btn-success loginButton" onClick={checkLogin}><strong>Log in</strong></button>
+                                <button
+                                    type="button"
+                                    className="btn btn-success loginButton"
+                                    onClick={checkLogin}
+                                >
+                                    <strong>Log in</strong>
+                                </button>
                             </div>
                             <div className="box15">
-                                <a href="/" style={{ color: "black" }}>Forget Password</a>
+                                <a style={{ color: "black" }}>
+                                    Forget Password
+                                </a>
                             </div>
                         </form>
                     </div>
@@ -79,6 +113,6 @@ const Login = () => {
             </div>
         </>
     );
-}
+};
 
 export default Login;
