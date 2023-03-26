@@ -7,6 +7,7 @@ import Img7 from "../../Images/photo-1453745670966-10d9449f5b12.jpg";
 import Img8 from "../../Images/frances-gunn-T8gIOL3_sdI-unsplash.jpg";
 import Img9 from "../../Images/1516863847617.jpg";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -29,7 +30,7 @@ const LandingPage = () => {
           </div>
           <div className="box5">
             <h4>
-              <a className="box23">Not Sure Where to Begin</a>
+              <Link className="box23" to="/" >Not Sure Where to Begin</Link>
             </h4>
           </div>
         </div>
@@ -280,13 +281,13 @@ const LandingPage = () => {
               <strong>Color Picker</strong>
             </h1>
             <h5 className="mt-3">W3schools' famous color picker</h5>
-            <a href="https://www.w3schools.com/colors/colors_picker.asp">
+            <Link to="https://www.w3schools.com/colors/colors_picker.asp">
               <img
                 className="img-fluid"
                 src={Img5}
                 alt="Please Reload the page"
               ></img>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -299,8 +300,8 @@ const LandingPage = () => {
               alt="Please Reload the Page"
             ></img>
             <div>
-              <a
-                href="https://www.w3schools.com/codegame/index.html"
+              <Link
+                to="https://www.w3schools.com/codegame/index.html"
                 className="btn mb-5"
                 style={{
                   borderRadius: "25px",
@@ -311,7 +312,7 @@ const LandingPage = () => {
                 }}
               >
                 <strong>Play Game</strong>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

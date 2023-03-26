@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import img1 from "../../Images/channels4_profile.jpg";
 import LandingPage from "../LandingPage/LandingPage";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -88,14 +88,14 @@ const Navbar = () => {
                 </button>
               </li>
               <li className="nav-item navitems">
-                <a className="nav-link">
+                <Link className="nav-link" to="/">
                   <strong>References</strong>
-                </a>
+                </Link>
               </li>
               <li className="nav-item navitems">
-                <a className="nav-link">
+                <Link className="nav-link" to="/">
                   <strong>Excercise</strong>
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="nav-item navitemsbuttons">
@@ -118,12 +118,10 @@ const Navbar = () => {
           <div className="col-sm-3" style={{ height: "auto" }}>
             <div className="mt-5" style={{ paddingLeft: "50px" }}>
               <h3 style={{ color: "#FFF4A3" }}>HTML and CSS</h3>
-              <href onClick={navigateToContent}>
-                <h5 className="box32">Learn HTML</h5>
-              </href>
-              <a>
-                <h5 className="box32">Learn CSS</h5>
-              </a>
+              <h5 onClick={navigateToContent} className="box32">
+                Learn HTML
+              </h5>
+              <h5 className="box32">Learn CSS</h5>
               <h5 className="box32">Learn RWD</h5>
               <h5 className="box32">Learn Boostrap</h5>
               <h5 className="box32">Learn W3.CSS</h5>

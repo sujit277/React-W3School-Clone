@@ -1,5 +1,6 @@
 import React from "react";
 import "./Content.css";
+import { Link } from "react-router-dom";
 import Img12 from "../../Images/Screenshot (607).png";
 
 const Content = () => {
@@ -18,141 +19,141 @@ const Content = () => {
             <h5 className="mt-3" style={{ paddingLeft: "10px" }}>
               HTML Tutorials
             </h5>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Home
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Introduction
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Editors
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Basic
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Elements
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Attributes
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Heading
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Paragraphs
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Styles
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Formatting
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Quotations
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Comments
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Colors
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML CSS
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Links
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Images
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Favicon
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Tables
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Lists
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Block
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Inline
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Classes
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Id
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Iframes
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML JavaScript
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML File Paths
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Head
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Layout
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Responsive
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Emojis
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Charset
-            </a>
+            </Link>
             <h5 className="mt-3 mb-3" style={{ paddingLeft: "10px" }}>
               HTML Forms
             </h5>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Form Attributes
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Form Elements
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Types
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Input Attributes
-            </a>
+            </Link>
             <h5 className="mt-3 mb-3" style={{ paddingLeft: "10px" }}>
               HTML Graphics
             </h5>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Canvas
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML SVG
-            </a>
+            </Link>
             <h5 className="mt-3 mb-3" style={{ paddingLeft: "10px" }}>
               HTML Media
             </h5>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Media
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Video
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Audio
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Pug-ins
-            </a>
-            <a className="box44" style={{ paddingLeft: "10px" }}>
+            </Link>
+            <Link className="box44" to="/content" style={{ paddingLeft: "10px" }}>
               HTML Youtube
-            </a>
+            </Link>
           </div>
           <div
             className="col-lg-10 box43 offset-lg-2"

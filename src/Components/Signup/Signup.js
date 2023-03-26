@@ -3,6 +3,7 @@ import "./Signup.css";
 import { useState } from "react";
 import axios from "axios";
 import img14 from "../../Images/channels4_profile.jpg";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [Data, setData] = useState({
@@ -41,9 +42,9 @@ const Signup = () => {
                   <strong>Name</strong>
                   <span className="box16">
                     Already have an Account?{" "}
-                    <a href="/login" style={{ color: "green" }}>
+                    <Link to="/login" style={{ color: "green" }}>
                       Sign in
-                    </a>
+                    </Link>
                   </span>
                 </label>
                 <input

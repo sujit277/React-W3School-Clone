@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import img1 from "../../Images/channels4_profile.jpg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -63,9 +63,9 @@ const Login = () => {
                                     <strong>Email</strong>
                                     <span className="box16">
                                         Need and Account?{" "}
-                                        <a href="/signup" style={{ color: "green" }}>
+                                        <Link to="/signup" style={{ color: "green" }}>
                                             Sign up
-                                        </a>
+                                        </Link>
                                     </span>
                                 </label>
                                 <input
@@ -103,9 +103,9 @@ const Login = () => {
                                 </button>
                             </div>
                             <div className="box15">
-                                <a style={{ color: "black" }}>
+                                <Link style={{ color: "black" }} to="/" >
                                     Forget Password
-                                </a>
+                                </Link>
                             </div>
                         </form>
                     </div>

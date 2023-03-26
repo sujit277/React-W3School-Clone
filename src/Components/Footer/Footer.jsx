@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -69,14 +70,14 @@ const Footer = () => {
         <div className="col-md-6 box10 mt-5 mb-5">
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 FORUM
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
+              <Link className="nav-link" to="/">
                 ABOUT
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
